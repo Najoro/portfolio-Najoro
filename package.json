@@ -1,0 +1,30 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
+    "e": "^0.2.32",
+    "pa": "^0.1.1",
+    "particlesjs": "^2.2.3",
+    "rea": "^0.0.1",
+    "reac": "^0.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^5.3.4"
+  }
+}
