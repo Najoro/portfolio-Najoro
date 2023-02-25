@@ -33,6 +33,7 @@
 }
 .nav-container{
       background: $white;
+      min-height: 60vh;
 }
 .nav-ul{
       width: 75%;
@@ -81,5 +82,8 @@
             li{
                   width: 100%;
             }
+      }
+      .identityG{
+            width: 100% !important;
       }
 }
