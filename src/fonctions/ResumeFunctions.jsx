@@ -7,6 +7,7 @@ import { GrStackOverflow } from "react-icons/gr";
 import {RiHtml5Line} from "react-icons/ri";
 import {DiCss3Full,DiJavascript1} from "react-icons/di";
 import {IoLogoNodejs} from "react-icons/io";
+import Carousels from "../components/Carousels";
 
 function Text() {
   return (
@@ -133,19 +134,19 @@ export const NavBody = ({ active = "", nom, children }) => {
 };
 export const Biographie = () => {
   const identityG = [
-    { label: "Name", value: "RAHERIMANANTSOA" },
-    { label: "contry", value: "Madagascar" },
-    { label: "Surname", value: "Najoro Fanantenana" },
-    { label: "Ville", value: "Antananarivo" },
-    { label: "Birthday", value: "27 Feb 1999 (24ans)" },
-    { label: "Nationality", value: "Malagasy" },
+    { id : 1, label: "Name", value: "RAHERIMANANTSOA" },
+    { id : 2, label: "contry", value: "Madagascar" },
+    { id : 3, label: "Surname", value: "Najoro Fanantenana" },
+    { id : 4, label: "Ville", value: "Antananarivo" },
+    { id : 5, label: "Birthday", value: "27 Feb 1999 (24ans)" },
+    { id : 6, label: "Nationality", value: "Malagasy" },
   ];
 
   return (
     <ul className="container pb-2 d-md-flex w-100 flex-row flex-wrap">
-        {identityG.map(({label , value}) => {
+        {identityG.map(({id , label , value}) => {
           return (
-            <li className=" identityG w-50 my-4 d-flex align-items-center" style={{letterSpacing : "1px" }}>
+            <li className=" identityG w-50 my-4 d-flex align-items-center" key={id} style={{letterSpacing : "1px" }}>
               <strong className="fs-6 w-25">{label} : </strong>
               <span className="fs-6 fw-light mx-3"> {value}</span>
             </li>
@@ -180,5 +181,7 @@ export const Skills = () => {
   )
 };
 export const Education = () => {
-  return <h1>Educationsss</h1>;
+  return (
+    <Carousels />
+  );
 };

@@ -10950,6 +10950,11 @@ nav .logo {
     height: auto;
   }
 }
+.home .welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home .h-1 {
   position: relative;
   z-index: 2;
@@ -10994,25 +10999,11 @@ nav .logo {
 
 @media (max-width: 767.98px) {
   .home {
-    justify-content: space-between !important;
+    height: 100% !important;
   }
-  .home .h1::after {
-    top: -100%;
-    left: -10px;
-  }
-  .home .welcome {
-    position: relative;
-    min-width: 200px;
-    z-index: 50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .home .welcome div {
-    height: 100px;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-evenly;
+  .welcome {
+    backdrop-filter: blur(10%);
+    z-index: 1000;
   }
   .reseaux {
     display: none !important;
@@ -11056,6 +11047,7 @@ nav .logo {
 }
 .nav-container {
   background: #ebe4e4;
+  min-height: 60vh;
 }
 
 .nav-ul {
@@ -11107,6 +11099,9 @@ nav .logo {
   }
   .nav-ul li {
     width: 100%;
+  }
+  .identityG {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=/src.a2b27638.css.map */

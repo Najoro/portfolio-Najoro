@@ -36,7 +36,7 @@ const Attributes = ({classe ,  delaitAnimation, children , style = {}}) => {
             </>
       )
 }
-export const Boutons = () => {
+export const Images = () => {
       return(
             <>
                   <div className="image-container">
