@@ -6,31 +6,35 @@ import {MdPermIdentity} from "react-icons/md";
 import {FiKey} from "react-icons/fi";
 import {TbMessages} from "react-icons/tb";
 
+const LinkNav = ({chemin , children , label , active = ""}) => {
+      const classe = `nav-link link ${active}`;
+      return(
+            <li className='nav-item my-1 text-bg-secondary'>
+                  <Link to={chemin} className= {classe}>
+                        <i>{children}</i>
+                        <span>{label}</span>
+                  </Link>
+            </li>
+      )
+}
 const Menu = () => {
       return (
-            <nav>
-                  <div className="logo">Njr</div>
-                  <div className="menu">
-                        <Link  to="/" className="link">
-                              <i><AiOutlineHome /></i>
-                              <span>Home</span>
-                        </Link>
-                        <Link to="/Resume" className="link">
-                              <i><RxResume/></i>
-                              <span>Resume</span>
-                        </Link>
-                        <Link to="/Porfolio" className="link">
-                              <i><MdPermIdentity /></i>
-                              <span>Portfolio</span>
-                        </Link>
-                        <Link to="/Services" className="link">
-                              <i><FiKey/></i>
-                              <span>Service</span>
-                        </Link>
-                        <Link to="/Contact" className="link">
-                              <i><TbMessages /></i>
-                              <span>Contact</span>
-                        </Link>
+            <nav className="navbar p-0 w-100 navbar-expand-md sticky-md-top" style={{zIndex : "1000000000000"}}>
+                  <div className="container-fluid menu-container">
+                        <div className="logo">Njr</div>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                              <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="myNav">
+                             <ul className="navbar-nav navbar-nav-scroll menu">
+                                    <LinkNav chemin="/" label="Home" active='active'><AiOutlineHome /></LinkNav>
+                                    <LinkNav chemin="/Resume" label="Resume"><RxResume /></LinkNav>
+                                    <LinkNav chemin="/Porfolio" label="Portfolio"><FiKey /></LinkNav>
+                                    <LinkNav chemin="/Services" label="Services"><MdPermIdentity /></LinkNav>
+                                    <LinkNav chemin="/Contact" label="Contact"><TbMessages /></LinkNav>
+                             </ul>
+                        </div>
+
                   </div>
             </nav>
       );

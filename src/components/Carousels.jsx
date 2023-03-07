@@ -4,7 +4,7 @@ const Bouton  = ({type}) => {
       const classe = `carousel-control-${type}`;
       const span = `carousel-control-${type}-icon`
       return(
-            <button className={classe} type="button" style={{transform : "scale(2)"}} data-bs-target="#carousel" data-bs-slide={type}>
+            <button className={classe} type="button" data-bs-target="#carousel" data-bs-slide={type}>
                   <span className={span} aria-hidden="true"></span>
                   <span className="visually-hidden">Next</span>
             </button>

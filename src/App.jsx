@@ -7,12 +7,12 @@ import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Services from "./pages/Services";
 import "./styles/index.scss";
-
+import Load  from "./components/Load";
 function App() {
   return (
     <Router>
-      <div className="App">
-         <header >
+      <div className="App" >
+         <header style={{height : "auto"}}>
           <Menu />
          </header>
         <main>
