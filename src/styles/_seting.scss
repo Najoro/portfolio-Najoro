@@ -1,4 +1,4 @@
-$orange :#e4c87c;
+$orange :#e0a500;
 $red : #d41c1c;
 $blue:#c1cecd;
 $violet:rgb(20, 24, 94);
@@ -20,13 +20,8 @@ a{
 }
 main{
       grid-area: main;
-      background: rgb(237,209,188);
       background: linear-gradient(-50deg, rgba(182, 176, 172, 0.8) 0%, rgb(91, 179, 180) 21%, #dab68e 40%,rgb(212, 190, 150) 64%, rgb(184, 173, 176) 100%);
       min-height: 100vh;
-}
-
-.spetial-title{
-      font-size: 0.9rem;
 }
 
 .button {
@@ -45,6 +40,24 @@ main{
             grid-area: main-md;
             width: 100%;
             min-height: 100vh;
+            padding-bottom: 50px;
       }
 }
       
+.title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $violet;
+      position: relative;
+      &::after{
+            content: " ";
+            width: 5rem;
+            height: 1rem;
+            background: $red;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -50%;
+            left: 0;
+      }
+}

@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import { Images, Welcome, LinksBouton } from '../fonctions/HomeFunctions';
+import Welcome from '../components/Home/Welcome';
+import Images from '../components/Home/Images';
+import SocialNetworks from '../components/Home/SocialNetworks';
 
 
 const Home = () => {
@@ -18,7 +20,7 @@ const Home = () => {
                         <Images />
                   </div>
                   <div className="reseaux col-md-1 d-md-flex justify-content-center flex-column align-items-center">
-                        <LinksBouton />
+                        <SocialNetworks />
                   </div>
             </div>
       );

@@ -1,0 +1,125 @@
+#Contact{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "A B";
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    justify-items: end;
+    align-content: center;
+
+    .talk{
+        grid-area: A;
+        background: $blue;
+        padding: 2rem;
+        border-radius: 10px;    
+        width: 100%;
+        p{
+            opacity: 0.8;
+            font-size:10px;
+        }
+        .phon-email{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            input,textarea{
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background: $white;
+            }    
+            textarea{
+                height: 100px;
+            }
+            input[type="submit"]{
+                @include button;
+                width: 200px;
+            }
+        }
+    }
+    .my-coordonner{
+        grid-area: B;
+        width: 100%;
+        ul{
+            padding: 0;
+            margin: 0 1rem;
+            li{
+                height: 100px;
+                width: 350px;
+                display: grid;
+                grid-template-columns: 30% auto;
+                grid-template-areas: "A B";
+                justify-items: start;
+                align-items: center;
+                border-radius: 10px;
+                margin: 1rem 0;
+                background: $blue;
+                &:hover{
+                    background: none;
+                    border: 2px solid $blue;
+                    backdrop-filter: blur(100%);
+                }
+                .icone{
+                    grid-area: A;
+                    width: 100%;
+                    margin: 1rem 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .icone-contenue{
+                        width: 60px;
+                        height: 60px;
+                        background: #000;
+                        color: $white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                        border-radius: 10px;
+                    }
+                }
+                .coordonner{
+                    grid-area: B;
+                    h6{
+                        font-size: 0.9rem;
+                        font-weight: 300;
+                        text-decoration: underline;
+                    }
+                    h5{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    #Contact{
+        display: flex !important;
+        flex-direction: column-reverse;
+        margin: 1rem;
+        .talk{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+        }
+        .my-coordonner{
+            ul{
+                margin: 0;
+            }
+            li{
+                width: 100% !important;
+                margin-left: 0 ;
+                margin-right: 0 ;
+            }
+        }
+    }
+}
