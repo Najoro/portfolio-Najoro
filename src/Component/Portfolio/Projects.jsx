@@ -1,13 +1,14 @@
 import React from "react";
 import Blague from "../../dist/images/projects/Blague.png";
 import Calculatrice from "../../dist/images/projects/Calculatrice.png";
-import Bulle from "../../dist/images/projects/Bulle.png";
 import Cocktails from "../../dist/images/projects/Cocktails.png";
-import Formulaire from "../../dist/images/projects/Formulaire.png";
 import Password from "../../dist/images/projects/Password.png";
+import Reservia from "../../dist/images/projects/Reservia.png";
+import Salarier from "../../dist/images/projects/Salarier.png";
+import { BsEye } from "react-icons/bs";
 
-
-const Project = ({ img, nameProject, children }) => {
+const Project = ({ img, nameProject, children , link }) => {
+  const linkProjet = "https://github.com/Najoro"+link
   return (
     <span className="each-project">
       <div className="image-container">
@@ -17,8 +18,8 @@ const Project = ({ img, nameProject, children }) => {
         <h5>{nameProject}</h5>
         <div className="explication">{children}</div>
         <span className="btm-project">
-          <div className="View">View</div>
-          <div className="GitHub">GitHub</div>
+          <div className="View"><BsEye /></div>
+          <a href={linkProjet} className="GitHub">Code</a>
         </span>
       </div>
     </span>
@@ -27,25 +28,24 @@ const Project = ({ img, nameProject, children }) => {
 const Projects = () => {
   return (
     <>
-      <Project img={Cocktails} nameProject={"Cocktails"}>
+      <Project img={Reservia} nameProject={"Reservia"} link={"/Reservia"}>
+        Une projet de reservation en ligne en PHP_MYSQL <br /> html-sass-js
+      </Project>
+      <Project img={Salarier} nameProject={"Projet salarier"} link={"/Projet-salarier-mvc"}>
+        Mon premier projet et PHP_MYSQL (CRUD) <br /> avec html-css-js
+      </Project>
+      <Project img={Cocktails} nameProject={"Cocktails"} link={"/cocktails"}>
         traitement API Cocktails en RactJS
       </Project>
       <Project img={Password} nameProject={"Generateur de mot de passe"}>
         Peut Generer 20 character avec (A-Z , a-z , 0-9 , charactere speciaux){" "}
         <br /> html-css-js
       </Project>
-      <Project img={Calculatrice} nameProject={"Calculatrice"}>
+      <Project img={Calculatrice} nameProject={"Calculatrice"} link={"/calculatrice"}>
         Calulatrice basic comme (+,-,*,/) <br /> html-css-js
       </Project>
       <Project img={Blague} nameProject={"Generateur de Blague"}>
         Contient plus de 1000 blague differente
-      </Project>
-      <Project img={Formulaire} nameProject={"Formulaire"}>
-        formulaire pour la colection des donne <br /> html-css-js-php
-      </Project>
-      <Project img={Bulle} nameProject={"Generateur de Bulle"}>
-        qui genere des bulle aleatoire avec des direction aleatoire <br />{" "}
-        html-css-js
       </Project>
     </>
   );
