@@ -1,59 +1,47 @@
 import React from "react";
-import "./styles/index.scss";
+import "./dist/Styles/index.scss";
 import {createBrowserRouter, RouterProvider } from "react-router-dom";
-import Menu from "./components/Other/Menu";
+import Menu from "./Component/Menu";
 import Home from "./pages/Home";
-import Porfolio from "./pages/Porfolio";
+import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
-import Biographie from "./components/Resume/Biographie";
-import { Skills } from "./components/Resume/Skills";
-import Diplomes from "./components/Resume/Diplomes";
-
+// import Services from "./pages/Services";
 
 const router = createBrowserRouter([
   {
-    path : "/",
+    path : "",
     element :<Menu/>,
     children : [
       {
         path : "",
-        element : <Home/>
+        element : <Home />
       },
       {
-        path : "Contact",
-        element : <Contact/>
+        path : "/AboutMe",
+        element : <AboutMe />
       },
       {
-        path : "Portfolio",
-        element : <Porfolio/>
+        path : "/Portfolio",
+        element : <Portfolio />
       },
       {
-        path : "Resume",
-        element : <Resume/>,
-        children : [
-          {
-            path : "",
-            element : <Biographie />
-          },
-          {
-            path : "Skills",
-            element : <Skills />
-          },
-          {
-            path : "Diplome",
-            element : <Diplomes />
-          }
-        ]
+        path : "/Contact",
+        element : <Contact />
       },
+      // {
+      //   path : "/Services",
+      //   element : <Services />
+      // }
     ]
   },
 ])
-function App() {
+
+const App = ()=> {
   return (
-      <div className="App" >
-        <RouterProvider router={router} />
-      </div>
+    <div className="main-contenue">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 

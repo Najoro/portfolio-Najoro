@@ -1,0 +1,22 @@
+.style-switcher{
+    position: fixed;
+    right: 30px;
+    top: 70px;
+    // width: 200px;
+    width:45px;
+    height: 30px;
+    border: 1px solid $bg-black-50;
+    border-radius: 10px;
+    background: $bg-black-100;
+    z-index: 11;
+    border: 5px;
+    transition: all 0.3s ease;
+    .day-night {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text-white-900;
+        height: 100%;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,84 @@
+$bg-black-900:#151515;
+$bg-black-100:#222222;
+$bg-black-50:#393939;
+$text-white-900:#ffffff;
+$text-white-700:#e9e9e9;
+$skin-color : #ec1839;
+
+// $bg-black-900:#f2f2fc;
+// $bg-black-100:#fdf9ff;
+// $bg-black-50:#e8dfec;
+// $text-white-900:#302e4d;
+// $text-white-700:#504e70;
+
+//media query
+$smal : 300px;
+$medium : 900px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Clicker';
+
+}
+@font-face {
+    font-family: "c";
+    src: url("../font/Clicker_Script/ClickerScript-Regular.ttf");
+  }
+  @font-face {
+    font-family: "p";
+    src: url("../font/Poppins/Poppins-Black.ttf");
+  }
+  @font-face {
+    font-family: "p-regular";
+    src: url("../font/Poppins/Poppins-Regular.ttf");
+  }
+body{
+    font-size: 16px;
+    font-family: 'p',sans-serif;
+}
+::before , ::after{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.btm{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    background: $skin-color;
+    border-radius: 40px;
+    display: inline-block;
+    color: $text-white-900 !important;
+    transition: all 0.3s ease;
+    font-family: 'p-regular';
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.hidden{
+    display: none !important;
+}
+.p-15{
+    padding: 0 15px;
+}
+.show-dark{
+    box-shadow: 0 0 2px $bg-black-50;
+}
+@media (max-width:900px) {
+    .btm{
+        font-size: 12px !important;
+        padding: 10px 20px !important;
+    }
+}
+@media (max-width:600px) {
+    .p-15{
+        padding: 0 !important;
+    }
+}
