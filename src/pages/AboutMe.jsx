@@ -15,53 +15,52 @@ const identity = [
 const Education = [
   {
     date: "2016",
-    title: "Bacc serie A",
+    title: "Baccalauréat série A",
     description:
-      "en classe de premier au Lycee Moderne Ampefiloha(LMA) j'ai eu l'initiative de passe l'examen du baccalaureat et j'ai reussit",
+      "En classe de première au Lycée Moderne Ampefiloha (LMA), j'ai eu l'initiative de passer l'examen du baccalauréat et j'ai réussi.",
   },
   {
     date: "2017",
-    title: "Bacc serie C",
-    description: "J'ai etudie a LMA ampefiloha et obtenu mon Bacc serie C ",
+    title: "Baccalauréat série C",
+    description: "J'ai étudié au LMA Ampefiloha et obtenu mon baccalauréat série C.",
   },
   {
     date: "2020 - 2021",
     title: "Licence en Informatique",
     description:
-      "J'ai Obtenue Une licence en informatique A CNTEMAD dans le le parcours : Base de donne",
+      "J'ai obtenu une licence en informatique au CNTEMAD dans le parcours Bases de données.",
   },
   {
-    date: "2021 -2022",
-    title: "Licence Mathematique Informatique",
+    date: "2021 - 2022",
+    title: "Licence en Mathématiques et Informatique",
     description:
-      "J'ai Obtenue mon Licence en Mathematique Informatique a l'Universtite d'antananarivo dans le parcours Probabilite Statistique Algebre Algoritmique (P A A C S)",
+      "J'ai obtenu ma licence en Mathématiques et Informatique à l'Université d'Antananarivo dans le parcours Probabilités, Statistiques, Algèbre et Algorithmique (PASA).",
   },
   {
     date: "2022 - 2023",
-    title: "Master 1 Mathematique Informatique",
+    title: "Master 1 en Mathématiques et Informatique",
     description:
-      "Apres avoir obtenue mon licence j'ai continuer mon etude supperieur dans le parcours Calcule Numerique",
+      "Après avoir obtenu ma licence, j'ai continué mes études supérieures dans le parcours Calcul Numérique.",
   },
   {
     date: "2024",
-    title: "Master 2 Mathenatique Informatique",
+    title: "Master 2 en Mathématiques et Informatique",
     description:
-      "en ce moment je suis encore parmi les etudiant en M2 dans ce meme parcours calcule numeriquenpm",
+      "En ce moment, je suis encore étudiant en M2 dans le même parcours de Calcul Numérique.",
   },
 ];
-
 const Formation = [
   {
     date: "2019",
-    title: "formation en Maintenance et Reseaux Informatique",
+    title: "Formation en Maintenance et Réseaux Informatiques",
     description:
-      "Pour mieux connaitre l'environement de la l'informatuque ,j'ai suivi ce formation qui m'a permie de voir plus claire sur le maintenance en informatique et quellque notion du reseaux Informatique",
+      "Pour mieux connaître l'environnement de l'informatique, j'ai suivi cette formation qui m'a permis de mieux comprendre la maintenance informatique et quelques notions de réseaux informatiques.",
   },
   {
     date: "2023",
-    title: "formation en developpement Web ",
+    title: "Formation en Développement Web",
     description:
-      "Dans cette formation on a apris la base de la programation et surtous le developpement Web ,on a vue en profondeur les technologie HTML-CSS-PHP-MYSQL  et pour les frameword on a utiliser du REACT-LARAVEL",
+      "Dans cette formation, nous avons appris les bases de la programmation et surtout le développement web. Nous avons vu en profondeur les technologies HTML, CSS, PHP, MySQL et, pour les frameworks, nous avons utilisé React et Laravel.",
   },
 ];
 const Skill = [
@@ -81,10 +80,12 @@ const About = () => {
             Mon nom est Najoro F. , je suis un : <span>Developpeur</span>
           </h3>
           <p>
-            Un jeune Autodidacte , Qui a pour objectif reussir dans le domaine
-            de l'informatique que est pret a tous pour ameliorer ces competence
-            et , qui n'as pas peure d'echouer et toujours motiver a apprendre
-            plus.
+            Je suis un jeune autodidacte passionné par l'informatique, déterminé
+            à réussir dans ce domaine. Toujours prêt à relever de nouveaux
+            défis, je m'efforce constamment d'améliorer mes compétences. L'échec
+            ne m'effraie pas; au contraire, il me motive à apprendre et à
+            progresser davantage. Mon objectif est de devenir un expert en
+            informatique, et je suis prêt à tout pour y parvenir.
           </p>
         </div>
       </div>

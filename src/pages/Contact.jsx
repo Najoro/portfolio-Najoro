@@ -7,8 +7,8 @@ import { GiSwordman } from "react-icons/gi";
 function Question({ question, p }) {
   return (
     <>
-      <h3 className="contact-title p-15">Si vous avez des question ?</h3>
-      <h3 className="contact-sub-title p-15">Je suis a votre disposition</h3>
+      <h3 className="contact-title p-15">{question}</h3>
+      <h3 className="contact-sub-title p-15">{p}</h3>
     </>
   );
 }
@@ -44,18 +44,14 @@ function Contact() {
     <div className="contact section">
       <div className="container">
         <Title title={"Contact"} />
-        <Question
-          question={"Si vous avez des question ?"}
-          p={"Si vous avez des question ?"}
-        />
       </div>
       <div className="row">
         <ContactItem label="Phone" value="+261 34 31 058 82"><BiPhoneCall/></ContactItem>
         <ContactItem label="Email" value="najofanantenana@gmail.com"><MdMail /></ContactItem>
         <ContactItem label="Lot" value="67Ha sud"><FaHouse/></ContactItem>
-        <ContactItem label="Contry" value="Madagascar/ Antananarivo"><GiSwordman /></ContactItem>
+        <ContactItem label="Pays" value="Madagascar/ Antananarivo"><GiSwordman /></ContactItem>
       </div>
-      <Question question={"Envoyez une email si besoins"} p={"Je rependrais"} />
+      <Question question={"N'hésite pas à m'écrire si tu as des questions"} p={"Je suis à votre disposition"} />
       <div className="row">
         <div className="contact-form p-15">
           <div className="row">

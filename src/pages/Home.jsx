@@ -15,10 +15,12 @@ function Home() {
               Je suis un : <div className="typing">Web developpeur</div>
             </h3>
             <p>
-              Un jeune Autodidacte , Qui a pour objectif reussir dans le domaine
-              de l'informatique que est pret a tous pour ameliorer ces
-              competence et , qui n'as pas peure d'echouer et toujours motiver a
-              apprendre plus.
+              Je suis un jeune autodidacte passionné par l'informatique,
+              déterminé à réussir dans ce domaine. Toujours prêt à relever de
+              nouveaux défis, je m'efforce constamment d'améliorer mes
+              compétences. L'échec ne m'effraie pas; au contraire, il me motive
+              à apprendre et à progresser davantage. Mon objectif est de devenir
+              un expert en informatique, et je suis prêt à tout pour y parvenir.
             </p>
             <Link to={"/AboutMe"} className="btm">
               Voir +
