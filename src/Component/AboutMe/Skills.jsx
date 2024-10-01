@@ -35,7 +35,7 @@ export const Skills = () => {
           <Skill width="30%" color="blue" bg="yellow" label="Python"><SiPython /></Skill>
           <Skill width="30%" color="blue" bg="#FFF" label="Language R"><SiR /></Skill>
           <Skill width="60%" color="#88dded" bg="#1c2c4c" label="React"><FaReact /></Skill>
-          <Skill width="2%" color="white" bg="black" label="Symfony"><DiSymfony /></Skill>
+          <Skill width="50%" color="white" bg="black" label="Symfony"><DiSymfony /></Skill>
           {/* <Skill width="2%" color="red" bg="white"><DiLaravel /></Skill> */}
         </div>
       </div>
