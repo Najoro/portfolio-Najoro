@@ -9,10 +9,7 @@ const LinkNav = ({ chemin, children, label }) => {
   const location = useLocation();
   return (
     <li>
-      <Link
-        to={chemin}
-        className={location.pathname === chemin ? "active" : " "}
-      >
+      <Link to={chemin} className={location.pathname === chemin ? "active" : " "}>
         <i className="margeicone">{children}</i>
         <span>{label}</span>
       </Link>
@@ -39,24 +36,14 @@ const Menu = () => {
       </div>
       <div className={classe}>
         <div className="logo">
-          <Link to={"/"}>
-            <span>N</span>ajoro
-          </Link>
+          <Link to={"/"}><span>N</span>ajoro</Link>
         </div>
         <ul className="nav" onClick={toogleMenu}>
-          <LinkNav chemin="/" label="Home">
-            <AiOutlineHome />
-          </LinkNav>
-          <LinkNav chemin="/AboutMe" label="About-Me">
-            <MdPermIdentity />
-          </LinkNav>
-          <LinkNav chemin="/Portfolio" label="Portfolio">
-            <FiKey />
-          </LinkNav>
+          <LinkNav chemin="/" label="Acceuil"><AiOutlineHome /></LinkNav>
+          <LinkNav chemin="/AboutMe" label="A propos"><MdPermIdentity /></LinkNav>
+          <LinkNav chemin="/Portfolio" label="Projets"><FiKey /></LinkNav>
           {/* <LinkNav chemin="/Services" label="Services"><FiKey /></LinkNav> */}
-          <LinkNav chemin="/Contact" label="Contact">
-            <TbMessages />
-          </LinkNav>
+          <LinkNav chemin="/Contact" label="Contacte"><TbMessages /></LinkNav>
         </ul>
       </div>
 

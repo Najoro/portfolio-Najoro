@@ -74,7 +74,17 @@
       border-radius: 10px;
       padding: auto;
       border: 1px solid $bg-black-50;
-      h5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .label-skill{
+        font-size: 0.6rem;
+        color: $text-white-700;
+        font-family: "p-regular";
+        font-weight: 200s;
+      }
+      .icone-skill {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -120,7 +130,7 @@
   .title {
     font-family: "p";
     font-style: 24px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     font-weight: 700;
     color: $text-white-900;
   }

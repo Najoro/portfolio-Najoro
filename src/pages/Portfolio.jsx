@@ -18,11 +18,11 @@ const projects = [
 
   {
     content : 'traitement API Cocktails en RactJS',
-    technologies : ['HTML5' , 'SASS'],
+    technologies : ['HTML5' , "CSS3", 'JAVASCRIPT', 'API COCKTAIL'],
     image : 'Cocktails', name : "Cocktails" , link : "/cocktails"},
   {
     content : 'Peut Generer 20 character avec (A-Z , a-z , 0-9 , charactere speciaux)',
-    technologies : ['HTML5' , 'JAVASCRIPT'],
+    technologies : ['HTML5', 'CSS3' , 'JAVASCRIPT'],
     image : 'Password', name : "Generateur de mot de passe" , link : " "},
   {
     content : 'Calulatrice basic comme (+,-,*,/)',
@@ -31,7 +31,7 @@ const projects = [
 
   {
     content : 'Contient plus de 1000 blague differente',
-    technologies : ['HTML5' , "CSS3", 'JAVASCRIPT', 'API COCKTAIL'],
+    technologies : ['HTML5' , "CSS3", 'JAVASCRIPT', 'API E-BLAGUE'],
     image : 'Blague', name : "Generateur de Blague" , link : " "},
 
 ]

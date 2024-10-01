@@ -66,11 +66,6 @@ function Contact() {
             />
           </div>
           <div className="row">
-            <Input
-              type={"text"}
-              classe={"col-12"}
-              placeholder={"Le message..."}
-            />
             <div className="form-item col-12 p-15">
               <div className="form-group">
                 <textarea
