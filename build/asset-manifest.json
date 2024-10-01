@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.1e3c7b56.css",
-    "main.js": "/static/js/main.b89417a1.js",
+    "main.js": "/static/js/main.154664da.js",
     "static/media/najoro.jpg": "/static/media/najoro.1437861d51b8140e67b6.jpg",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Black.ttf": "/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
     "static/media/ClickerScript-Regular.ttf": "/static/media/ClickerScript-Regular.be429aa79020941d218b.ttf",
     "index.html": "/index.html",
     "main.1e3c7b56.css.map": "/static/css/main.1e3c7b56.css.map",
-    "main.b89417a1.js.map": "/static/js/main.b89417a1.js.map"
+    "main.154664da.js.map": "/static/js/main.154664da.js.map"
   },
   "entrypoints": [
     "static/css/main.1e3c7b56.css",
-    "static/js/main.b89417a1.js"
+    "static/js/main.154664da.js"
   ]
 }
