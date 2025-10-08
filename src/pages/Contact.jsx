@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../Component/Base";
 import { BiPhoneCall } from "react-icons/bi";
 import { MdMail } from "react-icons/md";
-import { FaHouse } from "react-icons/fa6";
+import { FaHouse, FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa6";
 import { GiSwordman } from "react-icons/gi";
 function Question({ question, p }) {
   return (
@@ -12,7 +12,7 @@ function Question({ question, p }) {
     </>
   );
 }
-function ContactItem({ label, value , children}) {
+function ContactItem({ label, value, children }) {
   return (
     <div className="contact-info-item p-15">
       <div className="icone">
@@ -46,12 +46,12 @@ function Contact() {
         <Title title={"Contact"} />
       </div>
       <div className="row">
-        <ContactItem label="Phone" value="+261 34 31 058 82"><BiPhoneCall/></ContactItem>
+        <ContactItem label="Phone" value="+261 34 31 058 82"><BiPhoneCall /></ContactItem>
         <ContactItem label="Email" value="najofanantenana@gmail.com"><MdMail /></ContactItem>
-        <ContactItem label="Lot" value="67Ha sud"><FaHouse/></ContactItem>
+        <ContactItem label="Lot" value="67Ha sud"><FaHouse /></ContactItem>
         <ContactItem label="Pays" value="Madagascar/ Antananarivo"><GiSwordman /></ContactItem>
       </div>
-      <Question question={"N'hésite pas à m'écrire si tu as des questions"} p={"Je suis à votre disposition"} />
+      {/* <Question question={"N'hésite pas à m'écrire si tu as des questions"} p={"Je suis à votre disposition"} /> */}
       <div className="row">
         <div className="contact-form p-15">
           <div className="row">
@@ -87,6 +87,27 @@ function Contact() {
           </div>
         </div>
       </div>
+      {/* Social Media Section */}
+      <div className="row">
+        <div className="social-media-section">
+          <h3 className="social-title">Suivez-moi sur les réseaux sociaux</h3>
+          <div className="social-links">
+            <a href="https://github.com/votre-username" target="_blank" rel="noopener noreferrer" className="social-link">
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/in/votre-username" target="_blank" rel="noopener noreferrer" className="social-link">
+              <FaLinkedin />
+            </a>
+            <a href="https://twitter.com/votre-username" target="_blank" rel="noopener noreferrer" className="social-link">
+              <FaTwitter />
+            </a>
+            <a href="https://facebook.com/votre-username" target="_blank" rel="noopener noreferrer" className="social-link">
+              <FaFacebook />
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
