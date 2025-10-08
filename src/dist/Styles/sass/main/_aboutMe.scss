@@ -1,3 +1,10 @@
+.title {
+  font-family: "p";
+  font-style: 24px;
+  font-weight: 400;
+  color: $text-white-900;
+}
+
 .about {
   .about-content {
     flex: 0 0 100%;
@@ -58,69 +65,215 @@
     }
   }
   .skills {
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-top: 40px;
-    .skill-items {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    .row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
     }
+    
+    .skill-category {
+      background: $bg-black-100;
+      border: 1px solid $bg-black-50;
+      border-radius: 20px;
+      padding: 5px;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        border-color: $skin-color;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+      }
+      
+      .category-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: $skin-color;
+        font-family: "p-regular";
+        margin-bottom: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        position: relative;
+        padding-bottom: 12px;
+        
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 50px;
+          height: 3px;
+          background: linear-gradient(90deg, transparent, $skin-color, transparent);
+          border-radius: 2px;
+        }
+      }
+    }
+    
+    .skill-items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    
     .skill-item {
       width: 100px;
-      margin: 10px;
-      padding-bottom: 5px;
-      border-radius: 10px;
-      padding: auto;
-      border: 1px solid $bg-black-50;
+      padding: 10px;
+      border-radius: 18px;
+      border: 2px solid transparent;
+      background: linear-gradient($bg-black-100, $bg-black-100) padding-box,
+                  linear-gradient(135deg, $bg-black-50, $bg-black-50) border-box;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      .label-skill{
-        font-size: 0.6rem;
-        color: $text-white-700;
-        font-family: "p-regular";
-        font-weight: 200s;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, $skin-color 0%, darken($skin-color, 10%) 100%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 0;
       }
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba($skin-color, 0.2);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s ease, height 0.6s ease;
+        z-index: 0;
+      }
+      
+      &:hover {
+        transform: translateY(-8px) scale(1.02);
+        border-color: $skin-color;
+        box-shadow: 0 15px 40px rgba($skin-color, 0.3),
+                    0 5px 15px rgba(0, 0, 0, 0.4);
+        
+        &::before {
+          opacity: 0.08;
+        }
+        
+        &::after {
+          width: 200px;
+          height: 200px;
+        }
+        
+        .icone-skill {
+          transform: scale(1.15) rotate(8deg);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .label-skill {
+          color: $skin-color;
+          transform: scale(1.01);
+        }
+        
+        .progress {
+          transform: scaleX(1.05);
+        }
+      }
+      
+      .label-skill {
+        font-size: 0.75rem;
+        color: $text-white-900;
+        font-family: "p-regular";
+        margin-bottom: 5px;
+        text-align: center;
+        z-index: 1;
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+      }
+      
       .icone-skill {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
-        margin: 5px;
+        font-size: 2.2rem;
+        margin: 2px 0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+                    inset 0 -2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        position: relative;
+        
+        &::before {
+          content: "";
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          right: -2px;
+          bottom: -2px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
+          opacity: 0.5;
+          z-index: -1;
+        }
       }
+      
       .progress {
         background: $bg-black-50;
         height: 7px;
-        border-radius: 4px;
-        width: 100%;
+        border-radius: 12px;
+        width: 95%;
         position: relative;
+        margin-top: 12px;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
       }
+      
       .progress-in {
         position: absolute;
         left: 0;
         top: 0;
         height: 100%;
-        width: 20%;
-        border-radius: 4px;
-        background: $skin-color !important;
+        border-radius: 12px;
+        background: $skin-color;
       }
+      
       .skill-pourcente {
         font-family: "p-regular";
         position: absolute;
         right: 0;
         top: -40px;
         color: $text-white-900;
-        font-weight: 400px;
+        font-weight: 600;
         line-height: 40px;
+        z-index: 1;
       }
     }
+    
   }
+  
 }
 
 .education,

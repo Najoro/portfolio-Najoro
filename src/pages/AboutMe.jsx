@@ -75,18 +75,10 @@ const About = () => {
   return (
     <>
       <div className="row">
-        <div className="about-text p-15">
+        <div className="about-text p-1">
           <h3>
             Mon nom est Najoro F. , je suis un : <span>Developpeur</span>
           </h3>
-          <p>
-            Je suis un jeune autodidacte passionné par l'informatique, déterminé
-            à réussir dans ce domaine. Toujours prêt à relever de nouveaux
-            défis, je m'efforce constamment d'améliorer mes compétences. L'échec
-            ne m'effraie pas; au contraire, il me motive à apprendre et à
-            progresser davantage. Mon objectif est de devenir un expert en
-            informatique, et je suis prêt à tout pour y parvenir.
-          </p>
         </div>
       </div>
     </>
@@ -97,11 +89,11 @@ function AboutMe() {
     <section className="about section" id="About">
       <div className="container">
         <Title title={"A Propos"} />
-        <div className="row">
+        <div className="row p-1">
           <div className="about-content">
-            <About />
+            {/* <About /> */}
             <div className="row">
-              <Infos data={identity} />
+              {/* <Infos data={identity} /> */}
               <Skills data={Skill} />
             </div>
           </div>
