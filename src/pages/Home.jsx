@@ -1,6 +1,8 @@
 import React from "react";
 import najoro from "../dist/images/najoro.jpg";
+import cv from "../dist/pdf/cv.pdf";
 import { Link } from "react-router-dom";
+import { FaDownload } from "react-icons/fa";
 function Home() {
   return (
     <section className="home section" id="Home">
@@ -20,9 +22,14 @@ function Home() {
               Déterminé à devenir un expert,
               je transforme chaque échec en moteur de progression.
             </p>
-            <Link to={"/AboutMe"} className="btm">
-              Voir +
-            </Link>
+            <div className="home-buttons">
+              <Link to={"/AboutMe"} className="btm btn-primary">
+                Voir +
+              </Link>
+              <a href={cv} target="_blank" rel="noopener noreferrer" className="btm btn-secondary">
+                <FaDownload /> Mon CV
+              </a>
+            </div>
           </div>
           <div className="home-image">
             <img src={najoro} alt="profile" />
