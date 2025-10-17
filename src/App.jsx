@@ -1,6 +1,7 @@
 import React from "react";
 import "./dist/Styles/index.scss";
 import {createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Menu from "./Component/Menu";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
@@ -41,6 +42,7 @@ const App = ()=> {
   return (
     <div className="main-contenue">
       <RouterProvider router={router} />
+      <Analytics />
     </div>
   );
 }
