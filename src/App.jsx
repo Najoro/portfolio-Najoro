@@ -1,7 +1,6 @@
 import React from "react";
 import "./dist/Styles/index.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/react";
 import Menu from "./Component/Menu";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
@@ -23,7 +22,6 @@ const App = ()=> {
           </Route>
         </Routes>
       </BrowserRouter>
-      <Analytics />
     </div>
   );
 }
