@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d69dda6c.css",
-    "main.js": "/static/js/main.f306613e.js",
+    "main.js": "/static/js/main.cb6deb46.js",
     "static/media/najoro.jpg": "/static/media/najoro.1437861d51b8140e67b6.jpg",
     "static/media/cv.pdf": "/static/media/cv.907d022f539c785e367c.pdf",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -9,10 +9,10 @@
     "static/media/ClickerScript-Regular.ttf": "/static/media/ClickerScript-Regular.be429aa79020941d218b.ttf",
     "index.html": "/index.html",
     "main.d69dda6c.css.map": "/static/css/main.d69dda6c.css.map",
-    "main.f306613e.js.map": "/static/js/main.f306613e.js.map"
+    "main.cb6deb46.js.map": "/static/js/main.cb6deb46.js.map"
   },
   "entrypoints": [
     "static/css/main.d69dda6c.css",
-    "static/js/main.f306613e.js"
+    "static/js/main.cb6deb46.js"
   ]
 }
