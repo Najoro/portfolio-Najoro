@@ -16,6 +16,7 @@ const Diplome = ({ data, name }) => {
                     <FaCalendarAlt /> {date}
                   </h3>
                   <h4 className="timeline-title">{title}</h4>
+                  <p className="timeline-texte timeline-map">Lieux</p>
                   <p className="timeline-texte">{description}</p>
                 </div>
               );

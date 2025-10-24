@@ -1,10 +1,9 @@
 import React from "react";
-import { FaReact, FaPhp, FaEthereum, FaNodeJs, FaCoins } from "react-icons/fa";
+import { FaReact, FaPhp, FaNodeJs, FaCoins } from "react-icons/fa";
 import { RiHtml5Line } from "react-icons/ri";
 import { DiCss3Full, DiJavascript1, DiSymfony } from "react-icons/di";
 import { GrMysql } from "react-icons/gr";
-import { SiCplusplus, SiPython, SiR, SiSolidity, SiPostgresql, SiSpringboot, SiSpring, SiWeb3Dotjs, SiJquery, SiSqlite, SiRust, SiAnchor } from "react-icons/si";
-import { FaC } from "react-icons/fa6";
+import { SiPostgresql, SiSpring, SiWeb3Dotjs, SiJquery, SiSqlite, SiRust, SiAnchor } from "react-icons/si";
 
 const Skill = ({ width, children ,color="red" , bg="blue", label="label" }) => {
   return (

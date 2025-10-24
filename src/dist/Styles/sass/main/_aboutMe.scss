@@ -340,16 +340,19 @@
       font-weight: 700;
       font-family: "p-regular";
       font-size: 16px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       text-transform: capitalize;
       color: $text-white-900;
     }
     .timeline-texte {
       color: $text-white-700;
-      line-height: 25px;
+      line-height: 20px;
       text-align: justify;
       font-size: 12px;
       font-family: "p-regular";
+    }
+    .timeline-map {
+      font-style: oblique;
     }
   }
 }

@@ -4,14 +4,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import { MdMail } from "react-icons/md";
 import { FaHouse, FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa6";
 import { GiSwordman } from "react-icons/gi";
-function Question({ question, p }) {
-  return (
-    <>
-      <h3 className="contact-title p-15">{question}</h3>
-      <h3 className="contact-sub-title p-15">{p}</h3>
-    </>
-  );
-}
+
 function ContactItem({ label, value, children }) {
   return (
     <div className="contact-info-item p-15">
