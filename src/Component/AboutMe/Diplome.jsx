@@ -8,7 +8,7 @@ const Diplome = ({ data, name }) => {
       <div className="row">
         <div className="timeline-box">
           <div className="timeline show-dark">
-            {data.map(({ date, title, description }) => {
+            {data.map(({ date, title, description, map }) => {
               return (
                 <div className="timeline-item">
                   <div className="circle-dot"></div>
@@ -16,7 +16,7 @@ const Diplome = ({ data, name }) => {
                     <FaCalendarAlt /> {date}
                   </h3>
                   <h4 className="timeline-title">{title}</h4>
-                  <p className="timeline-texte timeline-map">Lieux</p>
+                  <p className="timeline-texte timeline-map">{map}</p>
                   <p className="timeline-texte">{description}</p>
                 </div>
               );
