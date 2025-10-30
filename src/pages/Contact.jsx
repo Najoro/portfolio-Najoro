@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 import Title from "../Component/Base";
 import { BiPhoneCall } from "react-icons/bi";
 import { MdMail } from "react-icons/md";
@@ -16,7 +17,7 @@ function ContactItem({ label, value, children }) {
     </div>
   );
 }
-const Input = ({ type, placeholder, classe }) => {
+const Input = ({ type, placeholder, classe, name, value, onChange }) => {
   let c = `form-item ${classe} p-15`;
   return (
     <div className={c}>
@@ -25,14 +26,69 @@ const Input = ({ type, placeholder, classe }) => {
           type={type}
           className="form-control"
           placeholder={placeholder}
-          name=""
-          id=""
+          name={name}
+          value={value}
+          onChange={onChange}
+          required
         />
       </div>
     </div>
   );
 };
+
 function Contact() {
+  const form = useRef();
+  const [formData, setFormData] = useState({
+    user_name: '',
+    user_email: '',
+    subject: '',
+    message: ''
+  });
+  const [status, setStatus] = useState({
+    type: '', // 'success', 'error', 'loading'
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus({ type: 'loading', message: 'Envoi en cours...' });
+
+    // Remplacez ces valeurs par vos propres identifiants EmailJS
+    // Obtenez-les sur https://www.emailjs.com/
+    const SERVICE_ID = 'portfolio_form_id';
+    const TEMPLATE_ID = 'template_fkny8tr';
+    const PUBLIC_KEY = 'unZOMMOhDlaRz6mIU';
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then((result) => {
+        console.log('Email envoyé avec succès:', result.text);
+        setStatus({ 
+          type: 'success', 
+          message: 'Message envoyé avec succès! Je vous répondrai bientôt.' 
+        });
+        // Réinitialiser le formulaire
+        setFormData({
+          user_name: '',
+          user_email: '',
+          subject: '',
+          message: ''
+        });
+      }, (error) => {
+        console.error('Erreur lors de l\'envoi:', error.text);
+        setStatus({ 
+          type: 'error', 
+          message: 'Une erreur s\'est produite. Veuillez réessayer.' 
+        });
+      });
+  };
+
   return (
     <div className="contact section">
       <div className="container">
@@ -47,37 +103,67 @@ function Contact() {
       {/* <Question question={"N'hésite pas à m'écrire si tu as des questions"} p={"Je suis à votre disposition"} /> */}
       <div className="row">
         <div className="contact-form p-15">
-          <div className="row">
-            <Input type={"text"} classe={"col-6"} placeholder={"Nom"} />
-            <Input type={"email"} classe={"col-6"} placeholder={"Email"} />
-          </div>
-          <div className="row">
-            <Input
-              type={"text"}
-              classe={"col-12"}
-              placeholder={"Objet de votre email"}
-            />
-          </div>
-          <div className="row">
-            <div className="form-item col-12 p-15">
-              <div className="form-group">
-                <textarea
-                  name=""
-                  type="text"
-                  className="form-control"
-                  id=""
-                  placeholder="Le message..."
-                ></textarea>
-              </div>
+          <form ref={form} onSubmit={handleSubmit}>
+            <div className="row">
+              <Input 
+                type="text" 
+                classe="col-6" 
+                placeholder="Nom" 
+                name="user_name"
+                value={formData.user_name}
+                onChange={handleChange}
+              />
+              <Input 
+                type="email" 
+                classe="col-6" 
+                placeholder="Email" 
+                name="user_email"
+                value={formData.user_email}
+                onChange={handleChange}
+              />
             </div>
-            <div className="form-item col-6 p-15">
-              <div className="form-group">
-                <button type="submit" className="btm">
-                  Envoyez
-                </button>
-              </div>
+            <div className="row">
+              <Input
+                type="text"
+                classe="col-12"
+                placeholder="Objet de votre email"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+              />
             </div>
-          </div>
+            <div className="row">
+              <div className="form-item col-12 p-15">
+                <div className="form-group">
+                  <textarea
+                    name="message"
+                    type="text"
+                    className="form-control"
+                    placeholder="Le message..."
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div className="form-item col-6 p-15">
+                <div className="form-group">
+                  <button 
+                    type="submit" 
+                    className="btm"
+                    disabled={status.type === 'loading'}
+                  >
+                    {status.type === 'loading' ? 'Envoi...' : 'Envoyez'}
+                  </button>
+                </div>
+              </div>
+              {status.message && (
+                <div className={`bg-white form-item col-12 p-15 alert alert-${status.type === 'success' ? 'success' : 'danger'}`}>
+                  {status.message}
+                </div>
+              )}
+            </div>
+          </form>
         </div>
       </div>
       {/* Social Media Section */}
