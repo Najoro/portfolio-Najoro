@@ -15,9 +15,9 @@ const App = ()=> {
         <Routes>
           <Route path="/" element={<Menu />}>
             <Route index element={<Home />} />
-            <Route path="AboutMe" element={<AboutMe />} />
-            <Route path="Portfolio" element={<Portfolio />} />
-            <Route path="Contact" element={<Contact />} />
+            <Route path="aboutMe" element={<AboutMe />} />
+            <Route path="portfolio" element={<Portfolio />} />
+            <Route path="contact" element={<Contact />} />
             {/* <Route path="Services" element={<Services />} /> */}
           </Route>
         </Routes>

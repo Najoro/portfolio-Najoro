@@ -40,10 +40,10 @@ const Menu = () => {
         </div>
         <ul className="nav" onClick={toogleMenu}>
           <LinkNav chemin="/" label="Acceuil"><AiOutlineHome /></LinkNav>
-          <LinkNav chemin="/AboutMe" label="A propos"><MdPermIdentity /></LinkNav>
-          <LinkNav chemin="/Portfolio" label="Projets"><FiKey /></LinkNav>
+          <LinkNav chemin="/aboutMe" label="A propos"><MdPermIdentity /></LinkNav>
+          <LinkNav chemin="/portfolio" label="Projets"><FiKey /></LinkNav>
           {/* <LinkNav chemin="/Services" label="Services"><FiKey /></LinkNav> */}
-          <LinkNav chemin="/Contact" label="Contacte"><TbMessages /></LinkNav>
+          <LinkNav chemin="/contact" label="Contacte"><TbMessages /></LinkNav>
         </ul>
       </div>
 
