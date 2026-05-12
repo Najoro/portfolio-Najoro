@@ -56,7 +56,14 @@ const Education = [
 ];
 const Experience = [
   {
-    date: "Fev. 2025 - Aujourd’hui",
+    date: "Nov. 2025 - Ajourd'hui",
+    title: "Team Lead Devellopper",
+    map: "Victus",
+    description:
+      "Je pilote l'equipe de developpement sur des projets web et back-office, en encadrant les developpeurs, en definissant l'architecture technique (NestJS, VueJS, React) et en assurant la qualite du code, la performance des applications et la livraison continue des fonctionnalites.",
+  },
+  {
+    date: "Fev. 2025 - Nov. 2025",
     title: "Developpeur BlockChain",
     map: "EQIMA Solutions",
     description:

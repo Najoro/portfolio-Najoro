@@ -3,7 +3,7 @@ import { FaReact, FaPhp, FaNodeJs, FaCoins } from "react-icons/fa";
 import { RiHtml5Line } from "react-icons/ri";
 import { DiCss3Full, DiJavascript1, DiSymfony } from "react-icons/di";
 import { GrMysql } from "react-icons/gr";
-import { SiPostgresql, SiSpring, SiWeb3Dotjs, SiJquery, SiSqlite, SiRust, SiAnchor } from "react-icons/si";
+import { SiPostgresql, SiSpring, SiWeb3Dotjs, SiJquery, SiSqlite, SiRust, SiAnchor, SiNestjs, SiExpress } from "react-icons/si";
 
 const Skill = ({ width, children ,color="red" , bg="blue", label="label" }) => {
   return (
@@ -44,6 +44,7 @@ export const Skills = () => {
             <Skill width="50%" color="white" bg="black" label="Symfony"><DiSymfony size={30}/></Skill>
             <Skill width="60%" color="white" bg="#68A063" label="Node.js"><FaNodeJs size={30}/></Skill>
             <Skill width="60%" color="green" bg="white" label="Spring-Boot"><SiSpring size={30}/></Skill>
+            <Skill width="50%" color="white" bg="#9B72CB" label="NestJs"><SiNestjs size={30}/></Skill>
           </div>
         </div>
 
