@@ -1,6 +1,6 @@
 import React from "react";
 import najoro from "../dist/images/najoro.jpg";
-import cv from "../dist/pdf/CV_RAHERIMANANTSOA_Najoro_Fanantenana.pdf";
+import cv from "../dist/pdf/CV_RAHERIMANANTSOA_NAJORO_FANANTENANA.pdf";
 import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
 function Home() {
