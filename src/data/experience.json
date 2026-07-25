@@ -1,0 +1,26 @@
+[
+  {
+    "date": "Nov. 2025 - Ajourd'hui",
+    "title": "Team Lead Devellopper",
+    "map": "Victus",
+    "description": "Je pilote l'equipe de developpement sur des projets web et back-office, en encadrant les developpeurs, en definissant l'architecture technique (NestJS, VueJS, React) et en assurant la qualite du code, la performance des applications et la livraison continue des fonctionnalites."
+  },
+  {
+    "date": "Fev. 2025 - Nov. 2025",
+    "title": "Developpeur BlockChain",
+    "map": "EQIMA Solutions",
+    "description": "j'ai développé des \"smart contracts\" sur Solana avec Anchor pour gérer les escrows et les tokens SPL, et les ai intégrés dans une application React Native de portefeuille électronique connectée à un backend Spring Boot et Express Js."
+  },
+  {
+    "date": "Nov. 2024 - Avr. 2025",
+    "title": "Integrateur Front-End ",
+    "map": "Mizara Technologie (Télétravail)",
+    "description": "J'ai intégré des maquettes Figma en sites responsives en utilisant HTML, CSS, JavaScript et jQuery, en veillant à la compatibilité multi-navigateurs, à l'optimisation du rendu et au respect des standards web."
+  },
+  {
+    "date": "Juill 2024 – Oct 2024",
+    "title": "Stage Developpeur Full-Stack Symfony",
+    "map": "DevelopA",
+    "description": "Au sein de Develop A, j'ai occupé le poste de développeur full stack Symfony 6 et JavaScript, où j'ai participé au développement backend d'un projet web Agile, en utilisant Git et MySQL."
+  }
+]

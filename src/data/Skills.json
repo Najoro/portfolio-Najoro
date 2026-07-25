@@ -1,0 +1,22 @@
+[
+  {
+    "icone": "HTML",
+    "width": "80%"
+  },
+  {
+    "icone": "CSS",
+    "width": "70%"
+  },
+  {
+    "icone": "PHP",
+    "width": "60%"
+  },
+  {
+    "icone": "MySQL",
+    "width": "50%"
+  },
+  {
+    "icone": "JAVASCIPT",
+    "width": "70%"
+  }
+]
