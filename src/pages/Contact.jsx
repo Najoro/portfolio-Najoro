@@ -153,7 +153,7 @@ function Contact() {
                     className="btm"
                     disabled={status.type === 'loading'}
                   >
-                    {status.type === 'loading' ? 'Envoi...' : 'Envoyez'}
+                    {status.type === 'loading' ? 'Envoi...' : 'Envoyer'}
                   </button>
                 </div>
               </div>

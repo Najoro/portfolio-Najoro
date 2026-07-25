@@ -17,19 +17,19 @@ const LinkNav = ({ chemin, children, label }) => {
   );
 };
 const Menu = () => {
-  const [isOpne, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   let classe = "aside ";
-  const toogleMenu = () => {
-    setIsOpen(!isOpne);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
-  if (isOpne) {
+  if (isOpen) {
     classe += "activeMenu";
   }
 
   return (
     <>
-      <div className="nav-toggle" onClick={toogleMenu}>
+      <div className="nav-toggle" onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
@@ -38,12 +38,12 @@ const Menu = () => {
         <div className="logo">
           <Link to={"/"}><span>N</span>ajoro</Link>
         </div>
-        <ul className="nav" onClick={toogleMenu}>
-          <LinkNav chemin="/" label="Acceuil"><AiOutlineHome /></LinkNav>
-          <LinkNav chemin="/aboutMe" label="A propos"><MdPermIdentity /></LinkNav>
+        <ul className="nav" onClick={toggleMenu}>
+          <LinkNav chemin="/" label="Accueil"><AiOutlineHome /></LinkNav>
+          <LinkNav chemin="/aboutMe" label="À propos"><MdPermIdentity /></LinkNav>
           <LinkNav chemin="/portfolio" label="Projets"><FiKey /></LinkNav>
           {/* <LinkNav chemin="/Services" label="Services"><FiKey /></LinkNav> */}
-          <LinkNav chemin="/contact" label="Contacte"><TbMessages /></LinkNav>
+          <LinkNav chemin="/contact" label="Contact"><TbMessages /></LinkNav>
         </ul>
       </div>
 

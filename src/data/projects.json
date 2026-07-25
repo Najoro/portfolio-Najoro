@@ -1,51 +1,51 @@
 [
   {
-    "content": "Portfolio Pour la Presentation ",
-    "technologies": ["React", "React Rooter Dom", "SASS"],
+    "content": "Portfolio pour la présentation",
+    "technologies": ["React", "React Router Dom", "SASS"],
     "image": "Portfolio",
     "name": "Mon Portfolio",
     "link": "/Portfolio"
   },
   {
-    "content": "Une projet de reservation en ligne en PHP_MYSQL ",
-    "technologies": ["HTML5", "CSS3", "PHP8", "MYSQL", "JAVASCRIPT"],
+    "content": "Un projet de réservation en ligne en PHP/MySQL",
+    "technologies": ["HTML5", "CSS3", "PHP8", "MySQL", "JavaScript"],
     "image": "Reservia",
     "name": "Reservia",
     "link": "/Reservia"
   },
   {
-    "content": "Mon premier projet et PHP_MYSQL (CRUD)",
-    "technologies": ["HTML5", "CSS3", "PHP8", "MYSQL", "JAVASCRIPT"],
+    "content": "Mon premier projet en PHP/MySQL (CRUD)",
+    "technologies": ["HTML5", "CSS3", "PHP8", "MySQL", "JavaScript"],
     "image": "Salarier",
     "name": "Projet salarier",
     "link": "/Projet-salarier-mvc"
   },
   {
-    "content": "traitement API Cocktails en RactJS",
-    "technologies": ["HTML5", "CSS3", "JAVASCRIPT", "API COCKTAIL"],
+    "content": "Traitement API Cocktails en ReactJS",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "API COCKTAIL"],
     "image": "Cocktails",
     "name": "Cocktails",
     "link": "/cocktails"
   },
   {
-    "content": "Peut Generer 20 character avec (A-Z , a-z , 0-9 , charactere speciaux)",
-    "technologies": ["HTML5", "CSS3", "JAVASCRIPT"],
+    "content": "Peut générer 20 caractères avec (A-Z, a-z, 0-9, caractères spéciaux)",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
     "image": "Password",
-    "name": "Generateur de mot de passe",
+    "name": "Générateur de mot de passe",
     "link": " "
   },
   {
-    "content": "Calulatrice basic comme (+,-,*,/)",
-    "technologies": ["HTML5", "CSS3", "JAVASCRIPT"],
+    "content": "Calculatrice basique (+, -, *, /)",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
     "image": "Calculatrice",
     "name": "Calculatrice",
     "link": "Calculatrice"
   },
   {
-    "content": "Contient plus de 1000 blague differente",
-    "technologies": ["HTML5", "CSS3", "JAVASCRIPT", "API E-BLAGUE"],
+    "content": "Contient plus de 1000 blagues différentes",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "API E-BLAGUE"],
     "image": "Blague",
-    "name": "Generateur de Blague",
+    "name": "Générateur de Blague",
     "link": " "
   }
 ]

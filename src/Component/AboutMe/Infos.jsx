@@ -16,10 +16,10 @@ const Infos = ({ data }) => {
       </div>
       <div className="buttons paddin-15">
         <Link to={"/"} className="btm">
-          Mon Cv
+          Mon CV
         </Link>
         <Link to={"/Contact"} className="btm">
-          Contacte
+          Contact
         </Link>
       </div>
     </div>

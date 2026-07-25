@@ -10,11 +10,11 @@ function Home() {
         <div className="row home-reverse">
           <div className="home-info p-15">
             <h3 className="hello">
-              Bonjours , Je suis{" "}
+              Bonjour, Je suis{" "}
               <span className="name">Najoro Fanantenana</span>
             </h3>
             <h3 className="my-profession">
-              Je suis un : <div className="typing">Web developpeur</div>
+              Je suis un : <div className="typing">Web développeur</div>
             </h3>
             <p>
               Autodidacte passionné d'informatique, je suis motivé par le défi,

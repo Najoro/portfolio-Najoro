@@ -11,7 +11,7 @@ const Skill = [
   { icone: "CSS", width: "70%" },
   { icone: "PHP", width: "60%" },
   { icone: "MySQL", width: "50%" },
-  { icone: "JAVASCIPT", width: "70%" },
+  { icone: "JAVASCRIPT", width: "70%" },
 ];
 
 function AboutMe() {
@@ -34,7 +34,7 @@ function AboutMe() {
         </div>
         <div className="row">
           <Diplome data={education} name={"Education et Formation"} />
-          <Diplome data={experience} name={"Experience Professionnel"} />
+          <Diplome data={experience} name={"Expérience Professionnelle"} />
         </div>
       </div>
     </section>

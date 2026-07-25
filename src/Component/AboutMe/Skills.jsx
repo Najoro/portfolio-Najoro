@@ -22,7 +22,7 @@ const Skill = ({ width, children ,color="red" , bg="blue", label="label" }) => {
 export const Skills = () => {
   return (
     <div className="skills">
-      <h3 className="title">Compétence Programmations</h3>
+      <h3 className="title">Compétences de programmation</h3>
       <div className="row">
         {/* Front-end */}
         <div className="skill-category">

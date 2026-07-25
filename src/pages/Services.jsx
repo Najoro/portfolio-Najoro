@@ -23,7 +23,7 @@ function Services() {
       <div className="container">
         <div className="row">
           <div className="section-title p-15">
-            <h2>Service</h2>
+            <h2>Services</h2>
           </div>
         </div>
         <div className="row">

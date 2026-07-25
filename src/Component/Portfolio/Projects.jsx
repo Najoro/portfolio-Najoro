@@ -6,7 +6,7 @@ const Projects = ({projects}) => {
     <>
     {projects.map(({content , image , name , link, technologies})=> {
 
-      const linkProjet = "https://github.com/Najoro"+link
+      const linkProject = "https://github.com/Najoro"+link
       return (
         <span className="each-project" key={link}>
         <div className="image-container">
@@ -24,7 +24,7 @@ const Projects = ({projects}) => {
             </div>
           <span className="btm-project">
             <div className="View"><BsEye /></div>
-            <a href={linkProjet} className="GitHub">Code</a>
+            <a href={linkProject} className="GitHub">Code</a>
           </span>
         </div>
       </span>
