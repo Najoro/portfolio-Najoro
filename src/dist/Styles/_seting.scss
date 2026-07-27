@@ -7,6 +7,14 @@ $skin-color : #ec1839;
 $white-color : #ffffff;
 $black-color : #000000;
 
+// Animation colors
+$anim-color-1: #5227FF;
+$anim-color-2: #FF9FFC;
+$anim-color-3: #B497CF;
+$anim-color-0: #752121;
+$anim-color-1-alt: #f00026;
+$anim-color-2-alt: #e68484;
+
 // $bg-black-900:#f2f2fc;
 // $bg-black-100:#fdf9ff;
 // $bg-black-50:#e8dfec;
@@ -39,9 +47,12 @@ $medium : 900px;
     font-family: "p-regular";
     src: url("../font/Poppins/Poppins-Regular.ttf");
   }
-body{
+html, body{
     font-size: 16px;
     font-family: 'p',sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 ::before , ::after{
     box-sizing: border-box;

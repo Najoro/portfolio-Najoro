@@ -3,18 +3,20 @@ import najoro from "../dist/images/najoro.jpg";
 import cv from "../dist/pdf/CV_RAHERIMANANTSOA_NAJORO_FANANTENANA.pdf";
 import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
+import TextType from "../gaps/TextType";
 function Home() {
   return (
     <section className="home section" id="Home">
       <div className="container">
         <div className="row home-reverse">
           <div className="home-info p-15">
-            <h3 className="hello">
+            {/* <h3 className="hello">
               Bonjour, Je suis{" "}
               <span className="name">Najoro Fanantenana</span>
-            </h3>
+            </h3> */}
+            
             <h3 className="my-profession">
-              Je suis un : <div className="typing">Web développeur</div>
+              Je peux être : <div className="typing"><TextType className="typing" text={["Développeur Frontend", "Développeur Backend", "Développeur Blockchain"]}/></div>
             </h3>
             <p>
               Autodidacte passionné d'informatique, je suis motivé par le défi,

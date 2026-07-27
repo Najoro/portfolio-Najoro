@@ -1,0 +1,10 @@
+@import "./seting";
+
+.liquid-ether-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  touch-action: none;
+  background: $bg-black-900;
+}
