@@ -6,14 +6,6 @@ import { useExperience } from "../hooks/useExperience";
 import { useEducation } from "../hooks/useEducation";
 import { useSkills } from "../hooks/useSkills";
 
-const Skill = [
-  { icone: "HTML", width: "80%" },
-  { icone: "CSS", width: "70%" },
-  { icone: "PHP", width: "60%" },
-  { icone: "MySQL", width: "50%" },
-  { icone: "JAVASCRIPT", width: "70%" },
-];
-
 function AboutMe() {
   const experience = useExperience();
   const education = useEducation();

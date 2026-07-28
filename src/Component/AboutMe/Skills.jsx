@@ -3,7 +3,7 @@ import { FaReact, FaPhp, FaNodeJs, FaCoins } from "react-icons/fa";
 import { RiHtml5Line } from "react-icons/ri";
 import { DiCss3Full, DiJavascript1, DiSymfony } from "react-icons/di";
 import { GrMysql } from "react-icons/gr";
-import { SiPostgresql, SiSpring, SiWeb3Dotjs, SiJquery, SiSqlite, SiRust, SiAnchor, SiNestjs, SiExpress } from "react-icons/si";
+import { SiPostgresql, SiSpring, SiWeb3Dotjs, SiJquery, SiSqlite, SiRust, SiAnchor, SiNestjs } from "react-icons/si";
 
 const Skill = ({ width, children ,color="red" , bg="blue", label="label" }) => {
   return (

@@ -10,19 +10,12 @@ function Home() {
       <div className="container">
         <div className="row home-reverse">
           <div className="home-info p-15">
-            {/* <h3 className="hello">
-              Bonjour, Je suis{" "}
-              <span className="name">Najoro Fanantenana</span>
-            </h3> */}
             
             <h3 className="my-profession">
               Je peux être : <div className="typing"><TextType className="typing" text={["Développeur Frontend", "Développeur Backend", "Développeur Blockchain"]}/></div>
             </h3>
             <p>
-              Autodidacte passionné d'informatique, je suis motivé par le défi,
-              l'apprentissage continu et le dépassement de soi.
-              Déterminé à devenir un expert,
-              je transforme chaque échec en moteur de progression.
+              Autodidacte passionné par l'informatique et les nouvelles technologies, je suis animé par la curiosité, l'apprentissage continu et la recherche d'amélioration constante. Chaque défi représente une opportunité d'apprendre, de progresser et de construire des solutions innovantes.
             </p>
             <div className="home-buttons">
               <Link to={"/AboutMe"} className="btm btn-primary">
